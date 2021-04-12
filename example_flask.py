@@ -13,7 +13,7 @@ def hello_iedi():
 
 @app.route("/double/<value>")    
 def double_num(value):
-    with open("test.txt", "a") as f:
+    with open("/home/output/test.txt", "a") as f:
         f.write("{} ".format(value))
     print(os.listdir("/home"))
     return str(2*int(value))
